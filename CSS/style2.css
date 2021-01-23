@@ -18,142 +18,12 @@ body {
   line-height: 1.6;
 }
 
-/* header */
-.header__container {
-  padding: 1rem 8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header__logo {
-  width: 40vh;
-}
-.header__nav ul {
-  display: flex;
-  list-style: none;
-}
-.header__nav ul li {
-  font-size: 1.8rem;
-}
-.header__nav ul li:not(:last-child) {
-  margin-right: 5rem;
-}
-.header__nav ul li a {
-  color: black;
-  text-decoration: none;
-  font-weight: 600;
-  /* text-transform: uppercase; */
-  display: inline-block;
-  transition: transform 0.5s;
-  position: relative;
-}
-
-.header__nav ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: -0.1rem;
-  width: 0;
-  height: 1px;
-  background-color: #ffc000;
-  left: 0;
-  transition: width 0.5s;
-}
-.header__nav ul li a:hover {
-  color: #ffc000;
-}
-.header__nav ul li a:hover::after {
-  width: 100%;
-}
-.header__nav ul li .active {
-  color: #ffc000;
-  text-decoration: none;
-  font-weight: 600;
-  display: inline-block;
-  transition: transform 0.5s;
-  position: relative;
-}
-.header__nav ul li .active::after {
-  content: "";
-  position: absolute;
-  bottom: -0.1rem;
-  width: 100%;
-  height: 1px;
-  background-color: #ffc000;
-  left: 0;
-  transition: width 0.5s;
-}
-.header__nav ul li .active:hover {
-  color: #ffc000;
-}
-.header__nav ul li .active:hover::after {
-  width: 100%;
-}
 @media only screen and (max-width: 800px) {
   .header__container {
     flex-direction: column;
   }
 }
 
-/* end header */
-
-/* BIO SECTION */
-.bio {
-  padding: 8rem 4rem;
-}
-.bio__container {
-  margin: 0 auto;
-  width: 1000px;
-  /* height: 400px; */
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-  padding: 2rem 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.bio__content--image {
-  flex: 0 0 30%;
-}
-.bio__images {
-  width: 300px;
-}
-.bio__images img {
-  width: 100%;
-}
-.bio__content {
-  flex: 0 0 55%;
-  padding: 3rem 1.5rem;
-  margin-left: 5rem;
-}
-.bio__content h3 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-  color: #ffc000;
-}
-.bio__content p {
-  font-size: 1.4rem;
-  text-align: justify;
-  font-weight: 400;
-}
-.btn__container {
-  text-align: end;
-  margin-top: 1rem;
-}
-.btn__container a {
-  font-size: 1.6rem;
-  border: 1px solid #ffc000;
-  background: none;
-  color: #ffc000;
-  padding: 0.5rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: all 0.2s;
-}
-.btn__container a:hover {
-  color: white;
-  background-color: #ffc000;
-}
 @media only screen and (max-width: 1200px) {
   .bio__container {
     margin: 0 auto;
@@ -206,155 +76,11 @@ body {
   }
 }
 
-/* END BIO SECTION*/
-
-/* art SECTION */
-.art {
-  padding: 8rem 4rem;
-}
-.art__container {
-  margin: 0 auto;
-}
-.art__container h3 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  color: #ffc000;
-}
-.art__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.art__list--item {
-  flex: 0 0 30%;
-  margin-bottom: 2rem;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-  position: relative;
-}
-.art__image1 {
-  width: 100%;
-  height: 400px;
-  background-image: url("../images/Bedroom in Arles.jpg");
-  background-size: cover;
-  transition: all 0.2s;
-}
-.art__image2 {
-  width: 100%;
-  height: 400px;
-  background-image: url("../images/The Starry Night.jpg");
-  background-size: cover;
-  transition: all 0.2s;
-}
-.art__image3 {
-  width: 100%;
-  height: 400px;
-  background-image: url("../images/Van Gogh self-portrait.jpg");
-  background-size: cover;
-  transition: all 0.2s;
-}
-.art__image img {
-  width: 100%;
-}
-.art__list--item:hover h4 {
-  top: 50%;
-  opacity: 1;
-}
-.art__list--item:hover .art__image3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/Van Gogh self-portrait.jpg");
-}
-.art__list--item:hover .art__image2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/The Starry Night.jpg");
-}
-.art__list--item:hover .art__image1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/Bedroom in Arles.jpg");
-}
-.art__list--item h4 {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2.5rem;
-  text-align: center;
-  color: white;
-  font-weight: 600;
-  opacity: 0;
-  transition: all 0.5s;
-}
-
-.btn__container--art {
-  text-align: center;
-  margin-top: 3rem;
-}
-.btn__container--art a {
-  font-size: 1.6rem;
-  border-bottom: 1px solid #ffc000;
-  color: #ffc000;
-  padding: 0.5rem 0;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.2s;
-}
 @media only screen and (max-width: 900px) {
   .art__list--item {
     flex: 0 0 48%;
   }
 }
-
-/* END ART */
-
-/* SECTION Quotes */
-
-.quotes {
-  padding: 8rem 4rem;
-}
-q::before {
-  content: open-quote;
-  margin-right: 0.1em;
-}
-q:before,
-q::after {
-  color: #fc0;
-  font-size: 2em;
-  line-height: 0.1em;
-  vertical-align: -0.4em;
-}
-q:last-child:after {
-  content: close-quote;
-}
-.quotes h3 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  color: #ffc000;
-}
-
-.quotes__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.quotes__item {
-  flex: 0 0 48%;
-  padding: 3rem 5rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-}
-.quotes__item {
-  margin-bottom: 3rem;
-}
-
-.quotes__item q {
-  font-size: 1.8rem;
-  text-align: justify;
-  font-weight: bold;
-}
-
 @media only screen and (max-width: 900px) {
   .quotes__item {
     flex: 0 0 100%;
@@ -363,13 +89,82 @@ q:last-child:after {
   }
 }
 
-/* END SECTION*/
+.header__container {
+  padding: 1rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+.header__logo {
+  width: 40vh;
+}
+.header__nav ul {
+  display: flex;
+  list-style: none;
+}
+.header__nav ul li {
+  font-size: 1.8rem;
+}
+.header__nav ul li:not(:last-child) {
+  margin-right: 5rem;
+}
+.header__nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: transform 0.5s;
+  position: relative;
+}
+
+.header__nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.1rem;
+  width: 0;
+  height: 1px;
+  background-color: #ffc000;
+  left: 0;
+  transition: width 0.5s;
+}
+.header__nav ul li a:hover {
+  color: #ffc000;
+}
+.header__nav ul li a:hover::after {
+  width: 100%;
+}
+.header__nav ul li .active {
+  color: #ffc000;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: transform 0.5s;
+  position: relative;
+}
+.header__nav ul li .active::after {
+  content: "";
+  position: absolute;
+  bottom: -0.1rem;
+  width: 100%;
+  height: 1px;
+  background-color: #ffc000;
+  left: 0;
+  transition: width 0.5s;
+}
+.header__nav ul li .active:hover {
+  color: #ffc000;
+}
+.header__nav ul li .active:hover::after {
+  width: 100%;
+}
 
 /* footer*/
 
 .footer {
   background-color: #ffc000;
   padding: 2rem 3rem;
+  border-top: 4px white dashed;
 }
 
 .footer ul {
@@ -414,6 +209,12 @@ q:last-child:after {
 }
 .aboutpage__image img {
   width: 60%;
+  border: 4px dashed #ffc000;
+}
+
+table,
+td {
+  border: 3px ridge #ffc000;
 }
 .aboutpage__image table {
   /* margin: 0 auto; */
@@ -424,11 +225,12 @@ q:last-child:after {
 }
 .aboutpage__image table tr td {
   text-align: left;
-  width: 60%;
+  width: 64%;
 }
 .aboutpage__content h3 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
+  color: #ffc000;
 }
 .aboutpage__content p {
   font-size: 1.8rem;
@@ -463,6 +265,7 @@ q:last-child:after {
     margin-bottom: 1.5rem;
     text-align: center;
     margin-top: 3rem;
+    color: #ffc000;
   }
   .aboutpage__content p {
     font-size: 1.8rem;
@@ -484,6 +287,7 @@ q:last-child:after {
   margin-bottom: 2rem;
   font-size: 3.5rem;
   text-transform: uppercase;
+  color: #ffc000;
 }
 .artpage__list {
   display: flex;
@@ -653,6 +457,7 @@ q:last-child:after {
   margin-bottom: 2rem;
   font-size: 3.5rem;
   text-transform: uppercase;
+  color: #ffc000;
 }
 .quotespage__container {
   display: flex;
@@ -664,7 +469,10 @@ q:last-child:after {
   flex: 0 0 48%;
   padding: 3rem 5rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-  animation: scale 2s ease-out -2s infinite alternate forwards;
+}
+
+.quotespage__item:hover {
+  animation: scale 2s ease-out -2s alternate forwards;
 }
 .quotespage__item {
   margin-bottom: 3rem;
@@ -673,7 +481,7 @@ q:last-child:after {
 .quotespage__item q {
   font-size: 1.8rem;
   text-align: justify;
-  font-family: "Nothing You Could Do", cursive;
+  font-weight: bold;
 }
 
 @keyframes scale {
