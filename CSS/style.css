@@ -193,3 +193,312 @@ body {
 .footer i {
   color: red;
 }
+<<<<<<< HEAD
+=======
+
+/* About page */
+
+.aboutpage {
+  padding: 8rem 15rem;
+}
+.aboutpage__container {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutpage__image {
+  flex: 0 0 45%;
+}
+.aboutpage__image img {
+  width: 60%;
+  border: 4px dashed #ffc000;
+}
+
+table,
+td {
+  border: 3px ridge #ffc000;
+}
+.aboutpage__image table {
+  /* margin: 0 auto; */
+  font-size: 1.8rem;
+}
+.aboutpage__image table tr td:first-child {
+  font-weight: bold;
+}
+.aboutpage__image table tr td {
+  text-align: left;
+  width: 64%;
+}
+.aboutpage__content h3 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #ffc000;
+}
+.aboutpage__content p {
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .aboutpage {
+    padding: 8rem 4rem;
+  }
+  .aboutpage__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutpage__image {
+    flex: 0 0 45%;
+    margin: 0 auto;
+  }
+  .aboutpage__image--image {
+    text-align: center;
+  }
+  .aboutpage__image img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .aboutpage__image table {
+    margin: 0 auto;
+    font-size: 1.8rem;
+  }
+  .aboutpage__content h3 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+    color: #ffc000;
+  }
+  .aboutpage__content p {
+    font-size: 1.8rem;
+    text-align: justify;
+  }
+}
+
+/* Art Page */
+
+/* art SECTION */
+.artpage {
+  padding: 8rem 4rem;
+}
+.artpage__container {
+  margin: 0 auto;
+}
+.artpage__container h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #ffc000;
+}
+.artpage__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.artpage__list--item {
+  flex: 0 0 24%;
+  position: relative;
+}
+.artpage__image1 {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/Bedroom in Arles.jpg");
+  background-size: cover;
+  transition: all 0.2s;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.artpage__image2 {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/The Starry Night.jpg");
+  background-size: cover;
+  transition: all 0.2s;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.artpage__image3 {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/Van Gogh self-portrait.jpg");
+  background-size: cover;
+  transition: all 0.2s;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.artpage__image4 {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/téléchargement.jfif");
+  background-size: cover;
+  transition: all 0.2s;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.artpage__image5 {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/téléchargement (1).jfif");
+  background-size: cover;
+  transition: all 0.2s;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.artpage__image6 {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/téléchargement (2).jfif");
+  background-size: cover;
+  transition: all 0.2s;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.artpage__image7 {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/téléchargement (3).jfif");
+  background-size: cover;
+  transition: all 0.2s;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.artpage__image8 {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/téléchargement (4).jfif");
+  background-size: cover;
+  transition: all 0.2s;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.artpage__image img {
+  width: 100%;
+}
+.artpage__list--item:hover .artpage__content {
+  top: 50%;
+  opacity: 1;
+}
+.artpage__list--item:hover .artpage__image3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/Van Gogh self-portrait.jpg");
+}
+.artpage__list--item:hover .artpage__image2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/The Starry Night.jpg");
+}
+.artpage__list--item:hover .artpage__image1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/Bedroom in Arles.jpg");
+}
+.artpage__list--item:hover .artpage__image5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/téléchargement (1).jfif");
+}
+.artpage__list--item:hover .artpage__image4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/téléchargement.jfif");
+}
+.artpage__list--item:hover .artpage__image6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/téléchargement (2).jfif");
+}
+.artpage__list--item:hover .artpage__image7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/téléchargement (3).jfif");
+}
+.artpage__list--item:hover .artpage__image8 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/téléchargement (4).jfif");
+}
+.artpage__list--item .artpage__content {
+  position: absolute;
+  top: 80%;
+  /* left: 50%; */
+  transform: translateY(-50%);
+  padding: 0 2rem;
+  color: white;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.artpage__list--item .artpage__content h4 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.artpage__list--item .artpage__content a {
+  text-decoration: none;
+  color: white;
+}
+.artpage__list--item .artpage__content p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1000px) {
+  .artpage__list--item {
+    flex: 0 0 45%;
+    position: relative;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .artpage__list--item {
+    flex: 0 0 100%;
+    position: relative;
+  }
+}
+
+.quotespage {
+  padding: 8rem 4rem;
+}
+.quotespage h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #ffc000;
+}
+.quotespage__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.quotespage__item {
+  flex: 0 0 48%;
+  padding: 3rem 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+.quotespage__item:hover {
+  animation: scale 2s ease-out -2s alternate forwards;
+}
+.quotespage__item {
+  margin-bottom: 3rem;
+}
+
+.quotespage__item q {
+  font-size: 1.8rem;
+  text-align: justify;
+  font-weight: bold;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .quotespage__item {
+    flex: 0 0 100%;
+    position: relative;
+  }
+}
+>>>>>>> parent of 708c025... delet some links
