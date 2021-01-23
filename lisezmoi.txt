@@ -3,6 +3,8 @@
 
 ## Ce projet contient la biographie artistique de Van Gogh ##
 
+j'ai déployer le projet a netlify : https://van-gogh.netlify.app/
+
 
 -- CSS : 
 
@@ -27,12 +29,13 @@ Si les trois sont utilisés dans un nom, cela ressemblerait à ceci:
 
 - mise en forme de texte
 
+
 -- HTML 
+j'ai utilisé :
 
-- Les éléments (balise) sémantiques
+- Les éléments sémantiques
 
--  favicon est une icône informatique symbolisant un site web. (https://www.favicon-generator.org/)
-
+-  favicon ! est une icône informatique symbolisant un site web. (https://www.favicon-generator.org/)
 
 -- HTML testing
 
@@ -42,6 +45,6 @@ W3C validator : https://validator.w3.org/
 
 https://fontawesome.com/icons?from=io
 
--- Images :
+-- Images Optimization:
 
-Optimization ; https://imagecompressor.com/fr/
+Optimization : https://imagecompressor.com/fr/
