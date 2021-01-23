@@ -1,0 +1,47 @@
+## ZAKARIA ELHAJOUI ##
+
+
+## Ce projet contient la biographie artistique de Van Gogh ##
+
+
+-- CSS : 
+
+j'ai utilisé :
+
+- BEM est une convention de dénomination populaire pour les noms de classe CSS 
+
+Un nom de classe BEM comprend jusqu'à trois parties.
+
+Bloc: l'élément parent le plus à l'extérieur du composant est défini comme le bloc.
+Élément: à l'intérieur du composant peut se trouver un ou plusieurs enfants appelés éléments.
+Modificateur: Un bloc ou un élément peut avoir une variation signifiée par un modificateur.
+Si les trois sont utilisés dans un nom, cela ressemblerait à ceci:
+
+[block]__[element]--[modifier]
+
+- Les requêtes média (media queries) permettent de modifier l'apparence d'un site ou d'une application en fonction du type d'appareil (impression ou écran par exemple) et de ses caractéristiques (la résolution d'écran ou la largeur de la zone d'affichage (viewport) par exemple).
+
+- Les animations CSS permettent de créer des transitions entre deux états de mise en forme. Une animation est décrite par deux choses : des propriétés propres à l'animation d'une part et un ensemble d'étapes (keyframes) qui indiquent l'état initial, final et éventuellement des états intermédiaires d'autre part.
+
+- Le module des boîtes flexibles, aussi appelé « flexbox », a été conçu comme un modèle de disposition unidimensionnel et comme une méthode permettant de distribuer l'espace entre des objets d'une interface ainsi que de les aligner. Dans cet article, nous verrons les fonctionnalités principales des flexbox que nous approfondirons ensuite dans d'autres articles.
+
+- mise en forme de texte
+
+-- HTML 
+
+- Les éléments (balise) sémantiques
+
+-  favicon est une icône informatique symbolisant un site web. (https://www.favicon-generator.org/)
+
+
+-- HTML testing
+
+W3C validator : https://validator.w3.org/
+
+-- Webfonts
+
+https://fontawesome.com/icons?from=io
+
+-- Images :
+
+Optimization ; https://imagecompressor.com/fr/

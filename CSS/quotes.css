@@ -1,0 +1,51 @@
+.quotespage {
+  padding: 8rem 4rem;
+}
+.quotespage h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #ffc000;
+}
+.quotespage__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.quotespage__item {
+  flex: 0 0 48%;
+  padding: 3rem 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+.quotespage__item:hover {
+  animation: scale 2s ease-out -2s alternate forwards;
+}
+.quotespage__item {
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+.quotespage__item q {
+  font-size: 1.8rem;
+  text-align: justify;
+  font-weight: bold;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .quotespage__item {
+    flex: 0 0 100%;
+    position: relative;
+  }
+}
