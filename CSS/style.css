@@ -424,7 +424,7 @@ q:last-child:after {
 
 table,
 td {
-  border: 3px ridge #ffc000;
+  border: 1px ridge #ffc000;
 }
 .aboutpage__image table {
   /* margin: 0 auto; */
@@ -435,7 +435,7 @@ td {
 }
 .aboutpage__image table tr td {
   text-align: left;
-  width: 64%;
+  width: 160px;
 }
 .aboutpage__content h3 {
   font-size: 3rem;
